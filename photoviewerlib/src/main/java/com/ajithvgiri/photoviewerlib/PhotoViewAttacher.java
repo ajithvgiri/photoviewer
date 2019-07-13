@@ -141,7 +141,7 @@ public class PhotoViewAttacher implements View.OnTouchListener,
         }
         mBaseRotation = 0.0f;
         // Create Gesture Detectors...
-        mScaleDragDetector = new CustomGestureDetector(imageView.getContext(), (GestureOverlayView.OnGestureListener) onGestureListener);
+        mScaleDragDetector = new CustomGestureDetector(imageView.getContext(), onGestureListener);
         mGestureDetector = new GestureDetector(imageView.getContext(), new GestureDetector.SimpleOnGestureListener() {
 
             // forward long click listener
